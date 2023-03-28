@@ -1,5 +1,6 @@
+/* eslint-disable import/first */
 import Taro from "@tarojs/taro";
-import { View, Form } from "@tarojs/components";
+import { View, Form, Input } from "@tarojs/components";
 import { AtButton, AtImagePicker } from "taro-ui";
 import { useState } from "react";
 

@@ -20,7 +20,13 @@ export default function Header(props) {
       {!props.isLogged && (
         <View className="login-button-box">
           <LoginButton handleClick={props.handleClick} />
-          {isWeapp && <WeappLoginButton setLoginInfo={props.setLoginInfo} />}
+          {isWeapp && (
+            <WeappLoginButton
+              openType={props.openType}
+              setLoginInfo={props.setLoginInfo}
+              onGetPhoneNumber={props.onGetPhoneNumber}
+            />
+          )}
           {isAlipay && <AlipayLoginButton setLoginInfo={props.setLoginInfo} />}
         </View>
       )}

@@ -17,7 +17,8 @@ export default function LoginButton(props) {
 
   return (
     <Button
-      openType="getUserInfo"
+      openType={props.openType}
+      onGetPhoneNumber={props.onGetPhoneNumber}
       onGetUserInfo={onGetUserInfo}
       type="primary"
       className="login-button"

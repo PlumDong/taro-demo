@@ -1,10 +1,12 @@
-import Taro, { useState } from "@tarojs/taro";
+/* eslint-disable import/first */
+import Taro from "@tarojs/taro";
 import { View } from "@tarojs/components";
 import { AtFloatLayout } from "taro-ui";
 
 import Logout from "../Logout";
 import LoginForm from "../LoginForm";
 import "./index.scss";
+import { useState } from "react";
 
 export default function Footer(props) {
   // Login Form 登录数据
